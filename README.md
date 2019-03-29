@@ -4,11 +4,13 @@ Circuit Playground Express, sponsored by Digi-Key and Adafruit!
 
 Everyone will be receiving a Circuit Playground Express in their swag bag! Getting started with it
 requires a micro USB to USB cable. We will have a few for use during the CircuitPython Open Spaces,
-however we do not have enough for everyone. **Please remember to bring a micro USB cable with you!**
+however we do not have enough for everyone. Beware of charge-only cables, they will not work for
+programming your Circuit Playground Express! **Please remember to bring a _DATA CAPABLE_ micro USB
+cable with you!**
 
 **The Adafruit Circuit Playground Express (CPX) has CircuitPython on board! It’s a MicroChip
-SAMD21 microcontroller running at 48 MHz, with 32kB RAM and 256kB flash: 192kB for CircuitPython,
-plus 64kB for the CIRCUITPY USB drive. It's loaded with all kinds of sensors, LEDs, touch pads,
+SAMD21 microcontroller running at 48 MHz, with 256kB flash, plus a 2MB external flash chip
+for the CIRCUITPY USB drive. The board is loaded with all kinds of sensors, LEDs, touch pads,
 buttons and more!**
 
 #### Check out these Adafruit Learn Guide Links!
@@ -64,12 +66,12 @@ Libraries](https://learn.adafruit.com/welcome-to-circuitpython/circuitpython-lib
 
 #### Restoring or Installing CircuitPython
 [CircuitPython.org](https://adafru.it/cp-cpx) has the current version of the CircuitPython UF2 for
-the Circuit Playground Express. **WARNING: This process will rarely result in the loss of any files
-on the board - backup your files if possible first!** To restore or update your board, double-tap
-the reset button found in the center of the board. The LEDs will flash red and then turn green, and
-you’ll see a **CPLAYBOOT** drive show up on your computer. Copy the .uf2 file to **CPLAYBOOT**. It
-will disconnect and the drive will disappear. A few seconds later, **CIRCUITPY** will reappear. If
-this does not resolve your issue, check out [Welcome->Troubleshooting->CIRCUITPY Drive
+the Circuit Playground Express. **WARNING: In rare cases, this process can result in the loss of
+any files on the board - backup your files if possible first!** To restore or update your board,
+double-tap the reset button found in the center of the board. The LEDs will flash red and then turn
+green, and you’ll see a **CPLAYBOOT** drive show up on your computer. Copy the .uf2 file to
+**CPLAYBOOT**. It will disconnect and the drive will disappear. A few seconds later, **CIRCUITPY**
+will reappear. If this does not resolve your issue, check out [Welcome->Troubleshooting->CIRCUITPY Drive
 Issues](https://learn.adafruit.com/welcome-to-circuitpython/troubleshooting#circuitpy-drive-issues-20-20)
 for instructions to fully erase the filesystem. **The steps found here WILL erase everything on the
 board.**
