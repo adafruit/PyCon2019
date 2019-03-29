@@ -8,10 +8,16 @@ however we do not have enough for everyone. Beware of charge-only cables, they w
 programming your Circuit Playground Express! **Please remember to bring a _DATA CAPABLE_ micro USB
 cable with you!**
 
-**The Adafruit Circuit Playground Express (CPX) has CircuitPython on board! It’s a MicroChip
+We will be hosting Open Spaces every day at PyCon, May 3 - May 5, 2019. We'll have this Quickstart
+available as a worksheet, including some examples on the back to get you started. This repo will
+have those examples and more available for you to try, play with, and modify. We'll also have some
+extras (servos, potentiometers and external NeoPixel strips) available for you to connect to
+your Circuit Playground Express.
+
+**The Adafruit Circuit Playground Express (CPX) has CircuitPython on board!** It’s a Microchip
 SAMD21 microcontroller running at 48 MHz, with 256kB flash, plus a 2MB external flash chip
 for the CIRCUITPY USB drive. The board is loaded with all kinds of sensors, LEDs, touch pads,
-buttons and more!**
+buttons and more!
 
 #### Check out these Adafruit Learn Guide Links!
 * Welcome to CircuitPython: http://adafru.it/cpy-welcome
