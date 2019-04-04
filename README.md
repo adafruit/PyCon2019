@@ -1,5 +1,5 @@
 # PyCon2019
-This repo contains the Circuit Python Quickstart worksheet and example code for the PyCon 2019 
+This repo contains the CircuitPython Quickstart worksheet and example code for the PyCon 2019 
 Circuit Playground Express, sponsored by Digi-Key and Adafruit!
 
 Everyone will be receiving a Circuit Playground Express in their swag bag! Getting started with it
@@ -63,11 +63,14 @@ Every time you write a file, **code.py** will be re-run, unless you are in the R
 **code.py** and see it run right away. This makes for a fast workflow.
 
 #### Libraries
-CircuitPython has builtin native libraries, but also has libraries written in Python (which are
-compiled into **.mpy** files to save space). The board has a does not currently have a **lib**
-folder because all of the necessary libraries for these examples are built into CircuitPython for
-CPX. But, if you want to use external peripherals in the future, you’ll need to download the right
-libraries. See [Welcome->CircuitPython
+CircuitPython has built in native libraries, but also has libraries written in Python (which are
+compiled into **.mpy** files to save space). The board does not currently have a **lib** folder
+because all of the necessary libraries for the CPX-specific examples are included in the
+CircuitPython build for CPX. But, if you want to try more complex examples or use external
+accessories, you’ll need to download the right libraries. If you try to run a program that requires
+a library not present on your board, the program will not complete - but you can check the serial
+console (see below) for more information. For details on getting libraries loaded on your CPX, see 
+[Welcome->CircuitPython
 Libraries](https://learn.adafruit.com/welcome-to-circuitpython/circuitpython-libraries).
 
 #### Restoring or Installing CircuitPython
@@ -83,6 +86,10 @@ for instructions to fully erase the filesystem. **The steps found here WILL eras
 board.**
 
 #### Connecting to the Serial Console
+When your code produces an error, or you add a `print` statement to your code, the results are
+printed to the serial console. If you're looking for your `print`ed data or you're not getting the
+results you expect, try connecting to the serial console. It's great for debugging code!
+
 The serial console and REPL are built into Mu - simply click the icon labeled “Serial”. 
 
 If not using Mu, on Windows, try **Putty** or **Tera Term**. See [Welcome->Advanced Serial Console
@@ -97,3 +104,12 @@ for more details.
     * `screen /dev/tty.usbmodem* 115200`
 * To connect using `screen` on Linux:
     * `screen /dev/ttyACM0 115200`
+
+#### Interact with the REPL!
+Once connected to the serial console, type Enter if necessary to start the REPL. If **code.py** is
+running, type ctrl-C, then press enter. Type ctrl-D to soft-restart and reload the serial console.
+The REPL works like a standard Python prompt. Try the following:
+```
+>>> 1+2
+3
+```
