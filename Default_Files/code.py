@@ -61,14 +61,13 @@ while True:
             for i in range(10):
                 if i < 4 or i == 9:  # Blue pixels
                     colour = [max(0, c - fade_offset) for c in python_colors[0]]
-                    cpx.pixels[i] = tuple(colour)
                 else:  # Yellow pixels
                     colour = [max(0, c - fade_offset) for c in python_colors[1]]
-                    cpx.pixels[i] = tuple(colour)
+                cpx.pixels[i] = tuple(colour)
             if fade_out:
-                fade_offset += 4
+                fade_offset += 3
             else:
-                fade_offset -= 4
+                fade_offset -= 3 
             if fade_offset > 100 or fade_offset == 0:
                 fade_out = not fade_out
             cpx.pixels.show()
