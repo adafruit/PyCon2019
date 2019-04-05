@@ -36,7 +36,11 @@ def color_wheel(pos):
 # Digi-Key colors: red and white!
 digi_key_colors = ((255, 0, 0), (180, 180, 150))
 # Python colors: blue and yellow!
-python_colors = ((0, 0, 255), (200, 180, 0))
+python_colors = ((32, 64, 255), (255, 180, 20))
+# Fade offset for Python colours
+fade_offset = 0
+# Fade flag
+fade_out = True
 
 color_index = 0
 pixel_number = 0
@@ -52,10 +56,21 @@ while True:
             cpx.pixels.show()
             start = now
     elif board_id == 1:
-        # Flash Python colors!
-        if now - start > 0.5:
-            color_index = (color_index + 1) % len(python_colors)
-            cpx.pixels.fill(python_colors[color_index])
+        # Pulsating Python logo!
+        if now - start > 0.05:
+            for i in range(10):
+                if i < 4 or i == 9:  # Blue pixels
+                    colour = [max(0, c - fade_offset) for c in python_colors[0]]
+                    cpx.pixels[i] = tuple(colour)
+                else:  # Yellow pixels
+                    colour = [max(0, c - fade_offset) for c in python_colors[1]]
+                    cpx.pixels[i] = tuple(colour)
+            if fade_out:
+                fade_offset += 4
+            else:
+                fade_offset -= 4
+            if fade_offset > 100 or fade_offset == 0:
+                fade_out = not fade_out
             cpx.pixels.show()
             start = now
     elif board_id == 2:
