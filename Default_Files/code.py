@@ -36,7 +36,7 @@ def color_wheel(pos):
 # Digi-Key colors: red and white!
 digi_key_colors = ((255, 0, 0), (180, 180, 150))
 # Python colors: blue and yellow!
-python_colors = ((0, 0, 255), (200, 180, 0))
+python_colors = ((32, 64, 255), (255, 180, 20))
 
 color_index = 0
 pixel_number = 0
