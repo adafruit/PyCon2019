@@ -4,10 +4,10 @@ This example requires the adafruit_irremote.mpy library.
 This example uses the IR transmitter found near the center of the board. Works with another CPX
 running the cpx_ir_receive.py example. Press the buttons to light up the NeoPixels on the RECEIVING
 CPX!"""
+import time
 import pulseio
 import board
 import adafruit_irremote
-import time
 from adafruit_circuitplayground.express import cpx
 
 # Create a 'pulseio' output, to send infrared signals from the IR transmitter
