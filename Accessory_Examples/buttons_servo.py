@@ -15,7 +15,7 @@ pwm = pulseio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)
 servo = servo.Servo(pwm)
 
 while True:
-    if cpx.button_A:
+    if cpx.button_a:
         servo.angle = 180
-    elif cpx.button_B:
+    elif cpx.button_b:
         servo.angle = 0
