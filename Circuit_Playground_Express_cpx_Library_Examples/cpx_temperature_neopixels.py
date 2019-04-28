@@ -13,7 +13,7 @@ import simpleio
 cpx.pixels.auto_write = False
 cpx.pixels.brightness = 0.3
 
-# Set these based on your ambient temperature for best results!
+# Set these based on your ambient temperature in Celsius for best results!
 minimum_temp = 24
 maximum_temp = 30
 

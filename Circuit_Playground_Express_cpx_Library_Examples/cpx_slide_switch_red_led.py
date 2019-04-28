@@ -6,6 +6,3 @@ while True:
         cpx.red_led = True
     else:
         cpx.red_led = False
-
-# Can also be written as:
-#    cpx.red_led = cpx.switch

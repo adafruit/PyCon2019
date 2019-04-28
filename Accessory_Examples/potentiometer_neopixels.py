@@ -1,4 +1,7 @@
-"""Connect the blue clip on the potentiometer to A0. Connect the black clip to a GND pad.
+"""This example requires a potentiometer. Talk to the team to get one!
+
+Connect the blue clip on the potentiometer to pad A0.
+Connect the black clip to a GND pad.
 Connect the red clip to a 3.3v pad.
 
 THIS EXAMPLE REQUIRES A SEPARATE LIBRARY BE LOADED ONTO YOUR CIRCUITPY DRIVE.

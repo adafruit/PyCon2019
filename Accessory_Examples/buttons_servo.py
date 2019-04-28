@@ -1,6 +1,8 @@
-"""Connect the blue clip (yellow wire) on the servo to A1.
-Connect the black clip (brown wire) on the servo to a GND pad.
-Connect the red clip (red wire) on the servo to a 3.3v pad.
+"""This example requires a servo. Talk to the team to get one!
+
+Connect the blue clip (on the yellow wire) on the servo to pad A1.
+Connect the black clip (on the brown wire) on the servo to a GND pad.
+Connect the red clip (on the red wire) on the servo to a 3.3v pad.
 
 THIS EXAMPLE REQUIRES A SEPARATE LIBRARY BE LOADED ONTO YOUR CIRCUITPY DRIVE.
 This example requires the adafruit_motor.mpy library.

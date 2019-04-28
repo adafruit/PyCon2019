@@ -1,5 +1,11 @@
-"""Connect the blue clip on the potentiometer to A0, and the white clip on the NeoPixel strip to A7.
-Connect the black clips to GND pads. Connect the red clip on the potentiometer to a 3.3v pad.
+"""This example requires a potentiometer and a NeoPixel strip. Talk to the team to get one of each!
+
+Connect the blue clip on the potentiometer to pad A0.
+Connect the black clip to a GND pad.
+Connect the red clip to a 3.3v pad.
+
+Connect the white clip on the NeoPixel strip to pad A7.
+Connect the black clip on the NeoPixel strip to a GND pad.
 Connect the red clip on the NeoPixel strip to the VOUT pad.
 
 THIS EXAMPLE REQUIRES A SEPARATE LIBRARY BE LOADED ONTO YOUR CIRCUITPY DRIVE.
