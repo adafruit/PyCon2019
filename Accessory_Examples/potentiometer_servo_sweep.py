@@ -9,7 +9,7 @@ Connect the black clip (on the brown wire) on the servo to a GND pad.
 Connect the red clip (on the red wire) on the servo to a 3.3v pad.
 
 THIS EXAMPLE REQUIRES A SEPARATE LIBRARY BE LOADED ONTO YOUR CIRCUITPY DRIVE.
-This example requires the simpleio.mpy AND adafruit_motor.mpy libraries.
+This example requires the simpleio.mpy AND adafruit_motor libraries.
 
 Rotate the potentiometer knob to watch the servo rotate!"""
 import board
