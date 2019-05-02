@@ -5,7 +5,7 @@ Connect the black clip (on the brown wire) on the servo to a GND pad.
 Connect the red clip (on the red wire) on the servo to a 3.3v pad.
 
 THIS EXAMPLE REQUIRES A SEPARATE LIBRARY BE LOADED ONTO YOUR CIRCUITPY DRIVE.
-This example requires the adafruit_motor.mpy library.
+This example requires the adafruit_motor library.
 
 Press the buttons to watch the servo rotate!"""
 import board
