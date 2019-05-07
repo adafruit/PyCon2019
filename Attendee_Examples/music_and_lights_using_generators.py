@@ -18,6 +18,7 @@ def leds_off():
 def gated(bool_func, off_func = None, *, switch = False, on = False):
     if switch:
         condition = lambda on: on != bool_func()
+        on = bool_func()
     else:
         condition = lambda on: bool_func()
 
@@ -28,7 +29,7 @@ def gated(bool_func, off_func = None, *, switch = False, on = False):
                 yield
                 if condition(on):
                     on = not on
-                    if not on:
+                    if off_func and not on:
                         off_func()
                     yield from sleep(0.3)
                 if on:
@@ -71,16 +72,17 @@ def play_sounds():
         else:
             touched = False
 
-# shake is too slow, so use tap instead.
+@gated((lambda: cpx.switch), switch = True)
 def flash_on_double_tap():
     while True:
+        yield
+        # shake is too slow, so use tap instead.
         if cpx.tapped:
             for _ in range(3):
                 cpx.red_led = True
                 yield from sleep(0.2)
                 cpx.red_led = False
                 yield from sleep(0.1)
-        yield from sleep(0.2)
 
 def main(*generators):
     iterators = [generator() for generator in generators]
