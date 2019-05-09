@@ -22,7 +22,7 @@ buttons and more!
 #### Check out these Adafruit Learn Guide Links!
 * Welcome to CircuitPython: http://adafru.it/cpy-welcome
 * CPX Guide: https://adafru.it/adafruit-cpx
-* CP Made Easy on CPX: https://adafru.it/cp-made-easy-on-cpx 
+* CP Made Easy on CPX: https://adafru.it/cp-on-cpx-made-easy
 
 #### Download the latest CircuitPython for Circuit Playground Express!
 * CircuitPython for CPX: https://circuitpython.org/board/circuitplayground_express/
