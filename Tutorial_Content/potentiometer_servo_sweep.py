@@ -20,11 +20,11 @@ This example requires the adafruit_motor library.
 Rotate the potentiometer knob to watch the servo rotate!"""
 import board
 import analogio
-import pulseio
+import pwmio
 from adafruit_motor import servo
 
 potentiometer = analogio.AnalogIn(board.A0)
-pwm = pulseio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)
+pwm = pwmio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)
 servo = servo.Servo(pwm)
 
 
