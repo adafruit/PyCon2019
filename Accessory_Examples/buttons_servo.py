@@ -9,11 +9,11 @@ This example requires the adafruit_motor library.
 
 Press the buttons to watch the servo rotate!"""
 import board
-import pulseio
+import pwmio
 from adafruit_motor import servo
 from adafruit_circuitplayground.express import cpx
 
-pwm = pulseio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)
+pwm = pwmio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)
 servo = servo.Servo(pwm)
 
 while True:

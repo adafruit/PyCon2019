@@ -6,12 +6,13 @@ running the cpx_ir_receive.py example. Press the buttons to light up the NeoPixe
 CPX!"""
 import time
 import pulseio
+import pwmio
 import board
 import adafruit_irremote
 from adafruit_circuitplayground.express import cpx
 
-# Create a 'pulseio' output, to send infrared signals from the IR transmitter
-pwm = pulseio.PWMOut(board.IR_TX, frequency=38000, duty_cycle=2 ** 15)
+# Create a 'pwmio' output, to send infrared signals from the IR transmitter
+pwm = pwmio.PWMOut(board.IR_TX, frequency=38000, duty_cycle=2 ** 15)
 pulseout = pulseio.PulseOut(pwm)
 # Create an encoder that will take numbers and turn them into NEC IR pulses
 encoder = adafruit_irremote.GenericTransmit(header=[9500, 4500], one=[550, 550],
